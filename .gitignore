@@ -1,0 +1,22 @@
+# --- Python / Backend ---
+__pycache__/
+*.pyc
+.env
+venv/
+*.log
+
+# --- Node / Angular Frontend ---
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage/
+
+# --- VS Code ---
+.vscode/
+
+# --- Operating System ---
+.DS_Store
+Thumbs.db
