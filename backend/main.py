@@ -47,7 +47,7 @@ async def lifespan(app: FastAPI):
     logger.info("Server startup: loading models...")
 
     # 1. Embedding model (HuggingFace)
-    model_name = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
+    model_name = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
     try:
         ml_models["embeddings"] = HuggingFaceEmbeddings(
             model_name=model_name,
